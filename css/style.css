@@ -16,19 +16,19 @@ body{
   margin: 2% auto;
   width: 80%;
   height: 100vh;
-  border: 1px solid gray;
+
 }
 
 .list{
   width: 25%;
   height: 100%;
-  border: 1px solid red;
+
 
 }
 .display-chat{
   width: 75%;
   height: 100%;
-  border: 1px solid green;
+
 }
 
 .user{
@@ -37,6 +37,10 @@ body{
   background-color: rgb(234, 234, 234);
   padding: 20px;
   align-items: center;
+
+}
+.list .user{
+  border-right: 1px solid rgb(214, 214, 214);
 }
 ul li{
   list-style: none;
@@ -51,11 +55,13 @@ ul li{
 .search{
   height: 5%;
   background-color: rgb(250, 250, 250);
+  border-right: 1px solid rgb(214, 214, 214);
 }
 .users-list{
   height: 75%;
   overflow: scroll;
-  background-color: red;
+  background-color: rgb(250, 250, 250);
+  border-right: 1px solid rgb(214, 214, 214);
 }
 img{
   width: 50px;
@@ -116,15 +122,27 @@ img{
   color: rgb(180, 183, 185);
   margin: 0 10px;
 }
-
-
+.users-list .users-chat{
+  height: 80px;
+  border: 1px solid rgb(245, 245, 245);
+  align-items: center;
+  padding: 10px;
+}
+.users-list .name span{
+  color: rgb(191, 194, 196);
+}
+.users-list .name .hour{
+  margin-left: 50px;
+  align-items: center;
+  color: rgb(191, 194, 196);
+}
 /* chat */
 .chat{
   height: 80%;
   width: 100%;
   padding: 60px 40px;
   overflow: scroll;
-  background-color: yellowgreen;
+  background-image: url(../img/mine.jpg);
 }
 .chat .text-right{
   height: 100%;
@@ -183,9 +201,9 @@ img{
   }
   .list .user{
     width: 100%;
-    height: 10%;
-    
+    height: 10%; 
   }
+
   
 }
 
