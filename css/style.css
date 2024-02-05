@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.row{
+  display: flex;
+}
+
+.container{
+  margin: 2% auto;
+  width: 80%;
+  height: 100vh;
+  border: 1px solid gray;
+}
+
+.list{
+  width: 20%;
+  height: 100%;
+  border: 1px solid red;
+}
+.display-chat{
+  width: 80%;
+  height: 100%;
+  border: 1px solid green;
+}
+
+.user{
+  height: 10%;
+  width: 100%;
+  background-color: orange;
+}
+
+/* list */
+
+.notification{
+  height: 12%;
+  background-color: gray;
+}
+.search{
+  height: 5%;
+  background-color: purple;
+}
+.users-list{
+  height: 73%;
+  overflow: scroll;
+  background-color: red;
+}
+
+
+
+
+
+
+/* chat */
+.chat{
+  height: 80%;
+  width: 100%;
+  padding: 60px 40px;
+  overflow: scroll;
+  background-color: yellowgreen;
+}
+.chat .text-right{
+  height: 100%;
+  width: 40%;
+  border: 1px solid black;
+  margin: 30px 0;
+  padding: 20px;
+}
+.chat .row{
+  justify-content: flex-end;
+  height: 20%;  
+}
+.chat .text-left{
+  height: 20%;
+  width: 40%;
+  border: 1px solid black;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+
+/* media query */
+
+/* tablet */
+
+@media screen and (max-width: 992px){
+  .container{
+    margin: 0;
+    width: 100%;
+  }
+
+  .list{
+    width: 10%;
+  }
+  .display-chat{
+    width: 90%;
+  }
+  .notification, .search, .name{
+    display: none;
+  }
+  .users-list{
+    height: 90%;
+  }
+  
+}
+
+
+/* smartphone */
+
+@media screen and (max-width: 542px){
+  .container{
+    width: 100%;
+  }
+  .list{
+    display: none;
+  }
+  .display-chat{
+    width: 100%;
+  }
+}
