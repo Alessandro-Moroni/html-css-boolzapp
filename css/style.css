@@ -193,11 +193,13 @@ img{
   font-size: 1.8rem;
   padding: 20px;
 }
-.keyboard div input{
-  height: 70px;
-  width: 900px;
+.keyboard .text-chat input{
+  height: 7vh;
+  width: 50vw;
   border-radius: 10px;
   border: 0px;
+  padding: 20px;
+
 }
 /* media query */
 
