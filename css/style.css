@@ -22,10 +22,14 @@ body{
 .container{
   width: 80%;
   height: 95%;
-
 }
 
-
+.list{
+  width: 25%;
+}
+.display-chat{
+  width: 75%;
+}
 .user{
   height: 70px;
   width: 100%;
@@ -62,6 +66,7 @@ ul li{
   overflow-y: scroll;
   background-color: rgb(250, 250, 250);
   border-right: 1px solid rgb(214, 214, 214);
+
 }
 img{
   width: 50px;
@@ -104,6 +109,7 @@ img{
 }
 .text-notification{
   margin-left: 10px;
+  font-size: 0.8rem;
 }
 .list .notification span{
   text-decoration: underline;
@@ -134,14 +140,17 @@ img{
   border: 1px solid rgb(245, 245, 245);
   align-items: center;
   padding: 10px;
+  font-size: 0.8rem;
+
 }
+
 .users-list .name span{
   color: rgb(191, 194, 196);
 }
 .users-list .name .hour{
-  margin-left: 50px;
-  align-items: center;
   color: rgb(191, 194, 196);
+  padding-left: 50px;
+
 }
 /* chat */
 .chat{
